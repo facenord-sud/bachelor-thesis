@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xwot:Entity xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xwot="http://diuf.unifr.ch/softeng" name="Door">
+  <PhysicalEntity xsi:type="xwot:Device" name="DoorDevice">
+    <Component xsi:type="xwot:Device" name="OpenedDevice">
+      <Component xsi:type="xwot:Sensor" name="ClosedSensor"/>
+      <Component xsi:type="xwot:Actuator" name="OpenActuator"/>
+    </Component>
+    <Component xsi:type="xwot:Device" name="LockedDevice">
+      <Component xsi:type="xwot:Sensor" name="LockedSensor"/>
+      <Component xsi:type="xwot:Actuator" name="LockActuator"/>
+    </Component>
+  </PhysicalEntity>
+</xwot:Entity>

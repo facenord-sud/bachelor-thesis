@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://wadl.dev.java.net/2009/02" xmlns:ns="http://softeng.unifr.ch/REST/generator/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://wadl.dev.java.net/2009/02 http://www.w3.org/Submission/wadl/wadl.xsd">
+	<grammars>
+		<include href="smart_lb.xsd"/>
+	</grammars>
+	<resources base="http://localhost:9090/mySystem/">
+		<resource id="com.example.lightbulb.resources.AquaponieDeviceResource" path="/aquaponie">
+			<method id="getAquaponieDeviceResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getAquaponieDeviceResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postAquaponieDeviceResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.EnergyDeviceResource" path="/aquaponie/energy">
+			<method id="getEnergyDeviceResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getEnergyDeviceResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postEnergyDeviceResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.HotWaterDeviceResource" path="/aquaponie/energy/hot-water">
+			<method id="getHotWaterDeviceResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getHotWaterDeviceResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postHotWaterDeviceResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.AmountOfHotWaterSensorResource" path="/aquaponie/energy/hot-water/amount">
+			<method id="getAmountOfHotWaterSensorResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getAmountOfHotWaterSensorResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.AmountOfHotWaterLinearPotentiometerResourcePublisherResource" path="/aquaponie/energy/hot-water/amount/pub">
+			<method id="getAmountOfHotWaterLinearPotentiometerResourcePublisherResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getAmountOfHotWaterLinearPotentiometerResourcePublisherResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postAmountOfHotWaterLinearPotentiometerResourcePublisherResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.HotWaterTemperaturSensorResource" path="/aquaponie/energy/hot-water/temperature">
+			<method id="getHotWaterTemperaturSensorResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getHotWaterTemperaturSensorResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.HotWaterTemperaturThermometerResourcePublisherResource" path="/aquaponie/energy/hot-water/temperature/pub">
+			<method id="getHotWaterTemperaturThermometerResourcePublisherResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getHotWaterTemperaturThermometerResourcePublisherResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postHotWaterTemperaturThermometerResourcePublisherResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.PowerDeviceResource" path="/aquaponie/energy/power">
+			<method id="getPowerDeviceResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getPowerDeviceResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postPowerDeviceResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.PowerUsedSensorResource" path="/aquaponie/energy/power/used">
+			<method id="getPowerUsedSensorResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getPowerUsedSensorResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.PowerProducedSensorResource" path="/aquaponie/energy/power/produced">
+			<method id="getPowerProducedSensorResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getPowerProducedSensorResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.PowerInBatterySensorResource" path="/aquaponie/energy/power/in-battery">
+			<method id="getPowerInBatterySensorResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getPowerInBatterySensorResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.PowerInBatteryPublisherResource" path="/aquaponie/energy/power/in-battery/pub">
+			<method id="getPowerInBatteryPublisherResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getPowerInBatteryPublisherResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postPowerInBatteryPublisherResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.WaterDeviceResource" path="/aquaponie/water">
+			<method id="getWaterDeviceResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getWaterDeviceResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postWaterDeviceResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.WaterTemperatureContextResource" path="/aquaponie/water/temperature">
+			<method id="getWaterTemperatureContextResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getWaterTemperatureContextResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="putWaterTemperatureContextResourceXML" name="PUT">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.WaterTemperaturePublisherResource" path="/aquaponie/water/temperature/pub">
+			<method id="getWaterTemperaturePublisherResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getWaterTemperaturePublisherResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postWaterTemperaturePublisherResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.WaterQualityResource" path="/aquaponie/water/quality">
+			<method id="getWaterQualityResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getWaterQualityResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postWaterQualityResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.O2SensorResource" path="/aquaponie/water/quality/oxygene">
+			<method id="getO2SensorResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getO2SensorResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.O2SensorPublisherResource" path="/aquaponie/water/quality/oxygene/pub">
+			<method id="getO2SensorPublisherResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getO2SensorPublisherResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postO2SensorPublisherResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.WaterDebitDeviceResource" path="/aquaponie/water/quality/debit">
+			<method id="getWaterDebitDeviceResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getWaterDebitDeviceResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postWaterDebitDeviceResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.TimeWaterChangedSensorResource" path="/aquaponie/water/quality/debit/time-water-changed">
+			<method id="getTimeWaterChangedSensorResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getTimeWaterChangedSensorResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.PumpWaterActuatorResource" path="/aquaponie/water/quality/debit/pump">
+			<method id="putPumpWaterActuatorResourceXML" name="PUT">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.MaxHightWaterServoResource" path="/aquaponie/water/quality/debit/max-high-water">
+			<method id="putMaxHightWaterServoResourceXML" name="PUT">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.RoomDeviceResource" path="/aquaponie/room">
+			<method id="getRoomDeviceResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getRoomDeviceResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postRoomDeviceResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.OpeningWindowActuatorResource" path="/aquaponie/room/windows">
+			<method id="getOpeningWindowActuatorResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getOpeningWindowActuatorResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postOpeningWindowActuatorResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.OpeniningWindowServoResource" path="/aquaponie/room/windows/windows">
+			<method id="putOpeniningWindowServoResourceXML" name="PUT">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.RoomTemperaturResource" path="/aquaponie/room/temperature">
+			<method id="getRoomTemperaturResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getRoomTemperaturResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+		</resource>
+		<resource id="com.example.lightbulb.resources.RoomTemperaturPublisherResource" path="/aquaponie/room/temperature/pub">
+			<method id="getRoomTemperaturPublisherResourceXML" name="GET">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+			<method id="getRoomTemperaturPublisherResourceHTML" name="GET">
+				<response>
+					<representation mediaType="text/html"/>
+				</response>
+			</method>
+			<method id="postRoomTemperaturPublisherResourceXML" name="POST">
+				<response>
+					<representation mediaType="application/xml"/>
+					<representation mediaType="application/json"/>
+					<representation mediaType="text/xml"/>
+				</response>
+			</method>
+		</resource>
+	</resources>
+</application>

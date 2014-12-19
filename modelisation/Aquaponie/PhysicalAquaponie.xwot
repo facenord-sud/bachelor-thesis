@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xwot:Entity xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xwot="http://diuf.unifr.ch/softeng">
+  <PhysicalEntity xsi:type="xwot:Device" name="AquaponieDevice">
+    <Component xsi:type="xwot:Device" name="EnergyDevice">
+      <Component xsi:type="xwot:Device" name="HotWaterDevice">
+        <Component xsi:type="xwot:Device" name="AmountOfHotWaterSensor">
+          <Component xsi:type="xwot:Sensor" name="AmountOfHotWaterLinearPotentiometer"/>
+        </Component>
+        <Component xsi:type="xwot:Device" name="HotWaterTemperatureSensor">
+          <Component xsi:type="xwot:Sensor" name="HotWaterTemperaturThermometer"/>
+        </Component>
+      </Component>
+      <Component xsi:type="xwot:Device" name="PowerDevice">
+        <Component xsi:type="xwot:Device" name="PowerUsedSensor">
+          <Component xsi:type="xwot:Sensor" name="PowerUserAmperSensor"/>
+        </Component>
+        <Component xsi:type="xwot:Device" name="PowerProducedSensor">
+          <Component xsi:type="xwot:Sensor" name="PowerProducedAmperSensor"/>
+        </Component>
+        <Component xsi:type="xwot:Device" name="PowerInBatterySensor">
+          <Component xsi:type="xwot:Sensor" name="PowerInBatteryAmperHourSensor"/>
+        </Component>
+      </Component>
+    </Component>
+    <Component xsi:type="xwot:Device" name="WaterDevice">
+      <Component xsi:type="xwot:Device" name="WaterTemperatureDevice">
+        <Component xsi:type="xwot:Sensor" name="WaterTemperatureThermometer"/>
+        <Component xsi:type="xwot:Actuator" name="HotWaterPump"/>
+      </Component>
+      <Component xsi:type="xwot:Device" name="WaterQuality">
+        <Component xsi:type="xwot:Device" name="O2Sensor">
+          <Component xsi:type="xwot:Sensor" name="O2Sensor"/>
+        </Component>
+        <Component xsi:type="xwot:Device" name="WaterDebitDevice">
+          <Component xsi:type="xwot:Device" name="TimeWaterChangedSensor">
+            <Component xsi:type="xwot:Sensor" name="TimeWaterChangedSensor"/>
+          </Component>
+          <Component xsi:type="xwot:Device" name="PumpWaterActuator">
+            <Component xsi:type="xwot:Actuator" name="PumpWaterActuator"/>
+          </Component>
+          <Component xsi:type="xwot:Device" name="MaxHighWaterActuator">
+            <Component xsi:type="xwot:Actuator" name="MaxHightWaterServo"/>
+          </Component>
+        </Component>
+      </Component>
+    </Component>
+    <Component xsi:type="xwot:Device" name="RoomDevice">
+      <Component xsi:type="xwot:Device" name="RoomTemperaturDevice">
+        <Component xsi:type="xwot:Device" name="RoomTemperaturSensor">
+          <Component xsi:type="xwot:Sensor" name="RoomTemperaturThermoter"/>
+        </Component>
+        <Component xsi:type="xwot:Device" name="OpeningWindowActuator">
+          <Component xsi:type="xwot:Actuator" name="OpeniningWindowServo"/>
+        </Component>
+      </Component>
+    </Component>
+  </PhysicalEntity>
+</xwot:Entity>

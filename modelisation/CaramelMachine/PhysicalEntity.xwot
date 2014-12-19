@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xwot:Entity xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xwot="http://diuf.unifr.ch/softeng">
+  <PhysicalEntity xsi:type="xwot:Device" name="CaramelDevice">
+    <Component xsi:type="xwot:Device" name="OverflowDevice">
+      <Component xsi:type="xwot:Sensor" name="OverflowButton"/>
+      <Component xsi:type="xwot:Actuator" name="PutItAwayServo"/>
+    </Component>
+    <Component xsi:type="xwot:Device" name="WhipDevice">
+      <Component xsi:type="xwot:Actuator" name="WhipServo"/>
+    </Component>
+    <Component xsi:type="xwot:Device" name="CheckEndDevice">
+      <Component xsi:type="xwot:Sensor" name="LuminositySensor"/>
+    </Component>
+    <Component xsi:type="xwot:Device" name="HeatDevice">
+      <Component xsi:type="xwot:Sensor" name="HeatSensor"/>
+      <Component xsi:type="xwot:Actuator" name="HeatServo"/>
+    </Component>
+  </PhysicalEntity>
+</xwot:Entity>
